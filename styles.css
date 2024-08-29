@@ -3,14 +3,14 @@
     padding: 0;
 }
 body{
-    background-color: rgb(0, 0, 33);
-    color: white;
+    background-color: white;
+    color: black;
     font-family: 'Poppins', sans-serif;
 }
 nav{
     display: flex;
     height: 80px;
-    background-color: rgb(106, 106, 143);
+    background-color: rgb(147, 208, 205);
     justify-content: space-around;
     align-items: center;
 }
@@ -22,8 +22,17 @@ nav ul li{
     list-style: none;
     margin: 0 23px;
 }
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: rgb(153, 153, 226);
+    font-size: 1.02rem;
+}
 .left{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    color: white;
 }
 .firstSection{
     display: flex;
@@ -39,8 +48,53 @@ nav ul li{
 }
 .rightSection img{
     width: 60%;
-    margin: 50px 0 50px 60px;
+    margin: 50px 0 50px 70px;
+    align-items: center;
 }
 .purple{
     color: rgb(170, 107, 228);
+}
+#element{
+    color: rgb(170, 107, 228);
+}
+#experience{
+    max-width: 80vw;
+    padding: 0 0 0 90px;
+}
+.section_text_p1{
+    text-align: center;
+    padding: 0 0 0 85px;
+}
+.title{
+    font-size: 1.6rem;
+    padding: 0 0 0 75px;
+    text-align: center;
+}
+main hr{
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 180px 72px 30px;
+}
+.arrow{
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem
+}
+.logo{
+    padding: 60px 0 10px 130px;
+}
+.details-container{
+    border-color: black;
+    flex: 1;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    height: 30rem;
+}
+.about-container{
+    padding: 25px 0 20px 50px;
+}
+.experience-sub-title{
+    padding: 0 70px;
+    color: gray;
 }

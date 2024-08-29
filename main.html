@@ -28,14 +28,45 @@
     <main>
         <section class="firstSection">
             <div class="leftSection">
-                Hi, this is <span class="purple">Sukarma</span>
-                <div>and I am a dedicated</div>
-                <div>student pursuing a CS major</div>
+                Hi, this is <span class="purple">Sukarma,</span>
+                <div>I am a dedicated</div>
+                <div>freshmen pursuing a CS major</div>
+                <span id="element"></span>
             </div>
             <div class="rightSection">
-                <img src="bg.png" alt="">
+                <img src="profile.png" alt="">
+            </div>
+            <img src="arrow.png"
+                alt="Arrow icon" 
+                class="arrow" 
+                onclick="location.href='./#experience'"
+            />
+        </section>
+<hr>
+        <section id="experience">
+            <!-- <span class="gray-text">Where I have worked so far</span> -->
+            <p class="section_text_p1">Explore My</p>
+            <h1 class="title">Work Experience</h1>
+            <div class="experience-details">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img 
+                            src="logo.png"
+                            alt="Experience icon"
+                            class="logo"
+                        />
+                        <h2 class="experience-sub-title">Junior Summer Intern</h2>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['CS Student', 'Data Analyst', 'Python Developer'],
+          typeSpeed: 50,
+        });
+      </script>
 </body>
 </html>
