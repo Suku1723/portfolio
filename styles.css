@@ -7,30 +7,32 @@ body{
     color: black;
     font-family: 'Poppins', sans-serif;
 }
-nav{
+#Home nav{
     display: flex;
     height: 80px;
     background-color: rgb(147, 208, 205);
     justify-content: space-around;
     align-items: center;
 }
-nav ul{
+#Home nav ul{
     display: flex;
     justify-content: center;
 }
-nav ul li{
+#Home nav ul li{
     list-style: none;
     margin: 0 23px;
 }
-nav ul li a{
+#Home nav ul li a{
     text-decoration: none;
-    color: white;
+    font-weight: 1000;
 }
-nav ul li a:hover{
+#Home nav ul li a:hover{
     color: rgb(153, 153, 226);
     font-size: 1.02rem;
+    text-decoration: underline;
 }
 .left{
+    font-family: 'Outfit', sans-serif;
     font-size: 1.8rem;
     color: white;
 }
@@ -38,7 +40,7 @@ nav ul li a:hover{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 80px 0 120px;
+    margin: 80px 0 80px;
 }
 .firstSection > div{
     width: 40%;
@@ -48,9 +50,66 @@ nav ul li a:hover{
 }
 .rightSection img{
     width: 60%;
-    margin: 50px 0 50px 70px;
+    margin: 50px 0 50px 0;
     align-items: center;
 }
+/* Ensure the rightSection doesn't overflow */
+.rightSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ensure the section takes up full width but doesn't overflow */
+    box-sizing: border-box;
+}
+
+.social-icons {
+    margin-top: 10px; /* Space between image and icons */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Prevents overflow by wrapping icons if needed */
+}
+
+.social-icons i {
+    font-size: 30px; /* Size of the icons */
+    margin: 0 10px; /* Space between icons */
+    cursor: pointer;
+}
+
+#linkedin:hover, #github:hover {
+    color: #0073b1; /* LinkedIn color on hover */
+}
+
+#github:hover {
+    color: #333; /* GitHub color on hover */
+}
+
+.linkedin-blue{
+    color: #0077B5
+}
+.linkedin-blue:visited{
+    color: #0077B5;
+}
+a {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+
+/* General rule to prevent horizontal scroll */
+body, html {
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Make sure the content doesn't exceed the viewport */
+main {
+    max-width: 100vw; /* Prevent content from exceeding screen width */
+    box-sizing: border-box;
+}
+
+
 .purple{
     color: rgb(170, 107, 228);
 }
@@ -74,7 +133,7 @@ nav ul li a:hover{
     border: 0;
     background: #8983ea;
     height: 1.3px;
-    margin: 100px 72px 30px;
+    margin: 90px 72px 30px;
 }
 .arrow{
     position: absolute;
@@ -86,6 +145,11 @@ nav ul li a:hover{
 }
 .arrow i{
     font-size: 2.5rem;
+    color: orange
+}
+.arrow i:hover{
+    font-size: 2.5rem;
+    color: rgb(93, 207, 207)
 }
 .logo{
     padding: 55px 0 0 160px;
@@ -97,10 +161,10 @@ nav ul li a:hover{
     border-radius: 2rem;
     justify-content: center;
     border: rgb(53, 53, 53) 0.1rem solid;
-    height: 30rem;
+    height: 32rem;
 }
 .experience-details{
-    padding: 0 0 0 45px;
+    padding: 0 0 0 65px;
 }
 .experience-sub-title{
     padding: 0 95px;
@@ -162,14 +226,566 @@ nav ul li a:hover{
     left: 74.4rem;
     border-radius: 2rem;
     width: 2.4rem !important;
-    bottom: -3rem;
+    bottom: -0.1rem;
 }
 .arrow2 i{
     font-size: 2.5rem;
+    color: orange;
+}
+.arrow2 i:hover{
+    font-size: 2.5rem;
+    color: rgb(93, 207, 207);
 }
 .hr2{
     border: 0;
     background: #8983ea;
     height: 1.3px;
-    margin: 60px 72px 30px;
+    margin: 25px 72px 30px;
+}
+#projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 0 2rem;
+}
+
+
+/* CONTACTS */
+.arrow3{
+    position: relative;
+    display: block;
+    left: 80rem;
+    border-radius: 2rem;
+    width: 2.4rem !important;
+    bottom: 1rem;
+}
+.arrow3 i{
+    font-size: 2.5rem;
+    color: orange;
+}
+.arrow3 i:hover{
+    font-size: 2.5rem;
+    color: rgb(93, 207, 207);
+}
+.hr3{
+    border: 0;
+    background: #8983ea;
+    height: 1.3px;
+    margin: 0 72px 40px;
+}
+
+.section_text_p3{
+    text-align: center;
+    justify-content: center;
+}
+
+.title3{
+    text-align: center;
+    justify-content: center;
+}
+
+#contacts {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+  
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+  
+.contact-info-container p {
+    font-size: larger;
+}
+
+.contact-info-container p a:hover{
+    color: rgb(63, 57, 57);
+}
+
+.contact-info-container i {
+    font-size: 25px;
+    color: #0077B5;
+}
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+  
+footer p {
+    text-align: center;
+}
+
+.footer,
+.nav-links{
+    display: flex;
+}
+
+.footer{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.nav-links a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+  
+.nav-links a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+
+/* Styling for each project card */
+.project-card {
+    width: 320px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    position: relative;
+}
+
+/* Project images */
+.project-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Project titles */
+.shot-chart, .distance-calculator {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Button container styles */
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto; /* Pushes the buttons to the bottom */
+    gap: 10px;
+    padding-top: 20px;
+}
+
+/* Button styles */
+.btn {
+    flex: 1;
+    padding: 10px 0;
+    background-color: white;
+    color: black;
+    border-color: gray;
+    border: rgb(134, 184, 188) 0.1rem solid;
+    border-radius: 2rem;
+    height: 3rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: rgb(107, 193, 200);
+    color: white;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 1024px) {
+    #projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
+.section_text_p2{
+    text-align: center;
+    padding: 20px 0 0 5px;
+}
+.title2{
+    font-size: 1.6rem;
+    padding: 0 0 0 5px;
+    text-align: center;
+}
+
+
+/* Responsiveness */
+
+/* For larger screens */
+@media (max-width: 1200px) {
+    .firstSection {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .leftSection, .rightSection {
+        width: 100%;
+    }
+
+    .rightSection img {
+        width: 80%;
+    }
+    
+    /* Arrow positioning for larger screens */
+    .arrow, .arrow2 {
+        right: 3%; /* Adjust for larger screens */
+        bottom: 3%;
+    }
+}
+
+/* For medium screens (tablets) */
+@media (max-width: 768px) {
+    .firstSection {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .leftSection {
+        font-size: 2rem;
+    }
+
+    .rightSection img {
+        width: 60%;
+    }
+
+    /* Arrow positioning for tablets */
+    .arrow, .arrow2 {
+        right: 2%;
+        bottom: 2%;
+    }
+    /* Work Experience Section */
+.about-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap */
+    justify-content: center;
+    align-items: center;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-radius: 2rem;
+    padding: 20px; /* Add padding for breathing room */
+    box-sizing: border-box;
+    height: auto; /* Allow height to adjust based on content */
+    max-width: 100%; /* Prevent the container from exceeding width */
+    overflow: hidden; /* Hide any accidental overflow */
+}
+
+.article-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+    width: 100%;
+    padding: 20px 0;
+}
+
+.container1 div, .container2 div {
+    text-align: center;
+    padding: 10px; /* Add padding for text */
+    width: 45%; /* Ensure two columns take up the width properly */
+    box-sizing: border-box;
+}
+
+/* Ensure article container fits properly within the border */
+.container1, .container2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Enable wrapping inside the container */
+    width: 100%;
+}
+
+/* Adjust the "Work Experience" details box */
+.info {
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+}
+
+/* For small screens (mobile) */
+@media (max-width: 480px) {
+    .firstSection {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .leftSection {
+        font-size: 1.5rem;
+    }
+
+    .rightSection img {
+        width: 50%;
+    }
+
+    /* Work Experience section stays within the borders */
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .article-container {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    /* Arrow positioning for mobile */
+    .arrow, .arrow2 {
+        right: 1.5%; /* Adjust to the bottom-right */
+        bottom: 1.5%;
+    }
+}
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-container {
+        flex-direction: column; /* Stack vertically */
+        width: 100%;
+    }
+
+    .container1 div, .container2 div {
+        width: 100%; /* Make each item take full width */
+        padding: 10px;
+    }
+    /* Ensure the container grows with content */
+.about-container {
+    height: auto; /* Allow the height to grow naturally */
+    padding-bottom: 20px; /* Add space at the bottom */
+    overflow: visible; /* Ensure no content is hidden */
+}
+
+/* Adjust the info section to prevent cut-off */
+.info {
+    padding: 20px; /* Ensure there's enough padding */
+    margin-bottom: 20px; /* Add margin to give extra space */
+    height: auto; /* Let the height grow */
+    box-sizing: border-box;
+}
+
+/* Ensure article container adjusts for content */
+.article-container {
+    padding-bottom: 20px; /* Add padding to prevent cut-off */
+    height: auto; /* Let it expand naturally */
+}
+
+}
+
+@media (max-width: 480px) {
+    .about-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .article-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .container1 div, .container2 div {
+        width: 100%; /* Full width for smaller screens */
+        padding: 5px;
+    }
+
+    .info {
+        text-align: center;
+        padding: 10px;
+    }
+    /* Work Experience Section */
+.about-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap */
+    justify-content: center;
+    align-items: center;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-radius: 2rem;
+    padding: 20px; /* Add padding for breathing room */
+    box-sizing: border-box;
+    height: auto; /* Allow height to adjust based on content */
+    max-width: 100%; /* Prevent the container from exceeding width */
+    overflow: hidden; /* Hide any accidental overflow */
+}
+
+.article-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+    width: 100%;
+    padding: 20px 0;
+}
+
+.container1 div, .container2 div {
+    text-align: center;
+    padding: 10px; /* Add padding for text */
+    width: 45%; /* Ensure two columns take up the width properly */
+    box-sizing: border-box;
+}
+
+/* Ensure article container fits properly within the border */
+.container1, .container2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Enable wrapping inside the container */
+    width: 100%;
+}
+/* Ensure the container grows with content */
+.about-container {
+    height: auto; /* Allow the height to grow naturally */
+    padding-bottom: 20px; /* Add space at the bottom */
+    overflow: visible; /* Ensure no content is hidden */
+}
+
+/* Adjusting the info section to prevent cut-off */
+.info {
+    padding: 20px;
+    margin-bottom: 20px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+/* Ensuring article container adjusts for content */
+.article-container {
+    padding-bottom: 20px;
+    height: auto;
+}
+
+
+/* Adjusting the "Work Experience" details box */
+.info {
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+}
+
+
+/* General Styling for Project Cards */
+.project-card {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Button container adjustments */
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.btn {
+    flex: 1;
+    padding: 10px 0;
+    background-color: white;
+    color: black;
+    border-color: gray;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: rgb(107, 193, 200);
+    color: white;
+}
+
+/* For tablet screens */
+@media (max-width: 768px) {
+    .project-card {
+        width: 80%;
+        margin: 15px;
+    }
+
+    .project-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    .project-card {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .project-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .btn {
+        width: 100%;
+    }
 }
